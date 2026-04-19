@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Analyzer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="card">
+
+<h1>🎓 Student Analyzer</h1>
+
+<form action="/analyze" method="post">
+
+    <!-- Student 1 -->
+    <div class="student-box">
+        <h3>👤 Student 1</h3>
+        <input name="name1" placeholder="Name" required>
+        <input name="marks1" type="number" placeholder="Marks" required>
+        <input name="attendance1" type="number" placeholder="Attendance %" required>
+        <input name="assignments1" type="number" placeholder="Assignments %" required>
+    </div>
+
+    <!-- Student 2 -->
+    <div class="student-box">
+        <h3>👤 Student 2</h3>
+        <input name="name2" placeholder="Name" required>
+        <input name="marks2" type="number" placeholder="Marks" required>
+        <input name="attendance2" type="number" placeholder="Attendance %" required>
+        <input name="assignments2" type="number" placeholder="Assignments %" required>
+    </div>
+
+    <!-- Student 3 -->
+    <div class="student-box">
+        <h3>👤 Student 3</h3>
+        <input name="name3" placeholder="Name" required>
+        <input name="marks3" type="number" placeholder="Marks" required>
+        <input name="attendance3" type="number" placeholder="Attendance %" required>
+        <input name="assignments3" type="number" placeholder="Assignments %" required>
+    </div>
+
+    <button>Analyze</button>
+
+</form>
+
+<a href="/logout"><button class="back">Logout</button></a>
+
+</div>
+
+</body>
+</html>

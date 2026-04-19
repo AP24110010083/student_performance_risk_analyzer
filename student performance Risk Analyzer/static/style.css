@@ -1,0 +1,171 @@
+/* 🌈 Animated Background */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(270deg, #ff0080, #7928ca, #2afadf, #ff9a00);
+    background-size: 800% 800%;
+    animation: gradientFlow 12s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Background animation */
+@keyframes gradientFlow {
+    0% { background-position: 0% 50%; }
+    25% { background-position: 50% 100%; }
+    50% { background-position: 100% 50%; }
+    75% { background-position: 50% 0%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* 🧊 Glass Card */
+.card {
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(20px);
+    padding: 30px;
+    border-radius: 25px;
+    width: 1000px;
+    color: white;
+    box-shadow: 0 0 30px rgba(0,0,0,0.4);
+    animation: fadeUp 1s ease;
+}
+
+/* Fade animation */
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Headings */
+h1, h2, h3 {
+    text-align: center;
+    text-shadow: 0 0 10px rgba(255,255,255,0.6);
+}
+
+/* 👤 Student Box */
+.student-box {
+    background: rgba(255,255,255,0.1);
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    border-left: 6px solid #00f5d4;
+    transition: 0.4s;
+}
+
+.student-box:hover {
+    transform: scale(1.03);
+    border-left: 6px solid #ff00ff;
+}
+
+/* Inputs */
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 6px 0;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    background: rgba(255,255,255,0.9);
+}
+
+/* 🔘 Animated Buttons */
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 12px;
+    border: none;
+    background: linear-gradient(45deg, #ff0080, #ff8c00, #40e0d0);
+    background-size: 300% 300%;
+    animation: buttonFlow 5s ease infinite;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+@keyframes buttonFlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+button:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 20px #fff;
+}
+
+/* Back button */
+.back {
+    background: linear-gradient(45deg, #444, #999);
+}
+
+/* Table */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+/* Table header */
+th {
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+    padding: 12px;
+    color: white;
+}
+
+/* Table data */
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Hover row */
+tr:hover {
+    background: rgba(255,255,255,0.15);
+}
+
+/* 🎯 Risk Colors with glow */
+.high {
+    color: #ff004c;
+    text-shadow: 0 0 10px #ff004c;
+}
+
+.medium {
+    color: #ffd700;
+    text-shadow: 0 0 10px #ffd700;
+}
+
+.low {
+    color: #00ffcc;
+    text-shadow: 0 0 10px #00ffcc;
+}
+
+/* Charts */
+.charts {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.charts img {
+    width: 45%;
+    border-radius: 15px;
+    background: white;
+    padding: 10px;
+}
+
+/* Videos */
+iframe {
+    width: 200px;
+    height: 120px;
+    border-radius: 10px;
+}
+
+/* OTP note */
+.note {
+    text-align: center;
+    color: #fff;
+}
